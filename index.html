@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dating • M.</title>
+  <meta name="description" content="I love adventures on wheels and coffee by the campfire — try to catch up! I’m bad at texting but great at getting ready fast."/>
+  <meta property="og:title" content="I love adventures on wheels and coffee by the campfire ☕🏍️ — try to catch up!">
+  <meta property="og:description" content="I travel, ride motorcycles, run marathons, and love spontaneous ideas. I’m bad at texting but great at getting ready fast.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="photo1.jpg">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="favicon.png" />
+  <style>
+    /* те же стили, что и в RU */
+    :root {
+      --bg: #0f1115; --card: #151821; --text: #e8ecf1; --muted: #9aa4b2;
+      --accent: #59c3ff; --accent-2: #9bff8a; --btn: #1e2430; --btn-border: #2a3242; --ring: rgba(89,195,255,.35);
+    }
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,"Noto Sans",sans-serif;color:var(--text);
+      background:radial-gradient(1200px 800px at 80% -20%, rgba(89,195,255,.09), transparent 60%),
+                 radial-gradient(1000px 900px at -10% 120%, rgba(155,255,138,.06), transparent 60%), var(--bg);
+      display:grid;place-items:center;padding:24px}
+    .wrap{width:min(920px,100%);display:grid;gap:18px}
+    header{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid #232a3a;border-radius:18px;padding:18px 20px;display:grid;gap:8px;box-shadow:0 10px 40px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.03);backdrop-filter:blur(6px)}
+    h1{margin:0;font-size:clamp(22px,3vw,32px);letter-spacing:.2px}
+    .tagline{color:var(--muted);font-size:14px}
+    .gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:10px}
+    .ph{aspect-ratio:4/3;border-radius:14px;overflow:hidden;position:relative;background:#0c0f15;border:1px solid #222a3a}
+    .ph img{width:100%;height:100%;object-fit:cover;display:block}
+    .ph:nth-child(1){grid-column:span 7}
+    .ph:nth-child(2){grid-column:span 5}
+    .ph:nth-child(3){grid-column:span 12;aspect-ratio:21/9}
+    @media (max-width:720px){.ph:nth-child(1),.ph:nth-child(2),.ph:nth-child(3){grid-column:1 / -1}.ph{aspect-ratio:16/10}}
+    .card{background:var(--card);border:1px solid #232a3a;border-radius:18px;padding:18px;display:grid;gap:12px;box-shadow:0 10px 40px rgba(0,0,0,.35)}
+    .about{font-size:16px;color:var(--text)}
+    .contacts{display:grid;gap:10px}
+    .cta{color:var(--muted);font-size:14px}
+    .btns{display:flex;flex-wrap:wrap;gap:10px}
+    .btn{flex:1 1 160px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 14px;background:var(--btn);border:1px solid var(--btn-border);color:var(--text);text-decoration:none;border-radius:12px;transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease}
+    .btn:hover{transform:translateY(-1px);border-color:#3b455a;box-shadow:0 6px 22px var(--ring)}
+    .btn svg{width:18px;height:18px}
+    .poll{display:grid;gap:10px}
+    .options{display:grid;gap:8px}
+    .opt{display:inline-flex;align-items:center;gap:10px;padding:10px 12px;border:1px dashed #33405a;border-radius:12px;cursor:pointer;user-select:none}
+    .opt input{appearance:none;width:16px;height:16px;border-radius:50%;border:2px solid #617399;display:inline-block;position:relative}
+    .opt input:checked{border-color:var(--accent);box-shadow:0 0 0 3px var(--ring) inset}
+    footer{color:var(--muted);font-size:12px;text-align:center;padding:6px}
+    .lang{position:fixed;bottom:18px;right:18px;display:flex;gap:8px}
+    .lang a{font-size:12px;padding:6px 10px;border-radius:999px;text-decoration:none;color:var(--text);background:#1a2130;border:1px solid #2a3448}
+    .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>I love adventures on wheels and coffee by the campfire ☕🏍️ — try to catch up!</h1>
+      <div class="tagline">A tiny, no-nonsense landing so it’s easy to say hi.</div>
+    </header>
+
+    <section class="gallery" aria-label="Photos">
+      <!-- UPLOAD your files with these names -->
+      <figure class="ph"><img src="photo1.jpg" alt="Portrait"/></figure>
+      <figure class="ph"><img src="photo2.jpg" alt="Motorcycle trip"/></figure>
+      <figure class="ph"><img src="photo3.jpg" alt="Lifestyle"/></figure>
+    </section>
+
+    <section class="card">
+      <div class="about">
+        I travel, ride motorcycles, run marathons, and love spontaneous ideas. I’m bad at texting but great at getting ready fast.
+      </div>
+      <div class="contacts">
+        <div class="cta">Message me here 👉</div>
+        <div class="btns">
+          <a class="btn" href="https://instagram.com/your_username" target="_blank" rel="noopener" aria-label="Instagram">
+            <!-- Instagram SVG -->
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.4.4.6.2 1 .5 1.5 1 .5.5.8.9 1 1.5.2.5.3 1.2.4 2.4.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.4 2.4-.2.6-.5 1-1 1.5-.5.5-.9.8-1.5 1-.5.2-1.2.3-2.4.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.4-.4-.6-.2-1-.5-1.5-1-.5-.5-.8-.9-1-1.5-.2-.5-.3-1.2-.4-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.9.4-2.4.2-.6.5-1 1-1.5.5-.5.9-.8 1.5-1 .5-.2 1.2-.3 2.4-.4C8.4 2.2 8.8 2.2 12 2.2m0-2.2C8.7 0 8.3 0 7 .1 5.7.2 4.8.4 4 .7c-.9.3-1.7.8-2.4 1.5C.9 3 .4 3.8.1 4.7.4 5.5.2 6.4.1 7.7 0 9 0 9.3 0 12s0 3 .1 4.3c.1 1.3.3 2.2.6 3 .3.9.8 1.7 1.5 2.4.7.7 1.5 1.2 2.4 1.5.8.3 1.7.5 3 .6 1.3.1 1.6.1 4.3.1s3 0 4.3-.1c1.3-.1 2.2-.3 3-.6.9-.3 1.7-.8 2.4-1.5.7-.7 1.2-1.5 1.5-2.4.3-.8.5-1.7.6-3 .1-1.3.1-1.6.1-4.3s0-3-.1-4.3c-.1-1.3-.3-2.2-.6-3-.3-.9-.8-1.7-1.5-2.4C20.7.9 19.9.4 19 .1c-.8-.3-1.7-.5-3-.6C14.7 0 14.4 0 12 0z"/><path fill="currentColor" d="M12 5.8A6.2 6.2 0 1 0 12 18.2 6.2 6.2 0 1 0 12 5.8m0 10.1A3.9 3.9 0 1 1 12 8.1a3.9 3.9 0 0 1 0 7.8z"/><circle cx="18.4" cy="5.6" r="1.4" fill="currentColor"/></svg>
+            Instagram
+          </a>
+          <a class="btn" href="https://t.me/your_username" target="_blank" rel="noopener" aria-label="Telegram">
+            <!-- Telegram SVG -->
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9.7 15.6 9.4 20c.5 0 .8-.2 1.1-.5l2.6-2.5 5.4 4c1 .6 1.6.3 1.8-1l3.3-15.3c.3-1.4-.5-2-1.4-1.6L1.8 9.4c-1.3.5-1.3 1.2-.2 1.6l5.6 1.8 13-8.2c.6-.4 1.1-.2.7.2L9.7 15.6z"/></svg>
+            Telegram
+          </a>
+          <a class="btn" href="https://signal.me/#p/+1234567890" target="_blank" rel="noopener" aria-label="Signal">
+            <!-- Signal SVG -->
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1.5C6.2 1.5 1.5 6.2 1.5 12c0 1.8.5 3.6 1.4 5.1l-.9 3.6 3.6-.9A10.4 10.4 0 0 0 12 22.5c5.8 0 10.5-4.7 10.5-10.5S17.8 1.5 12 1.5zm0 18.9c-1.7 0-3.4-.5-4.8-1.4l-.3-.2-2.1.5.5-2.1-.2-.3A8.4 8.4 0 1 1 12 20.4z"/></svg>
+            Signal
+          </a>
+        </div>
+      </div>
+      <div class="poll" aria-labelledby="poll-title">
+        <div id="poll-title" class="cta">Pick our first date — and I’ll text you:</div>
+        <div class="options" role="group" aria-label="First date options">
+          <label class="opt"><input type="radio" name="date" value="coffee"> Coffee + riverside walk</label>
+          <label class="opt"><input type="radio" name="date" value="ride"> Sunset moto ride</label>
+          <label class="opt"><input type="radio" name="date" value="surprise"> Surprise me: your route</label>
+        </div>
+      </div>
+    </section>
+
+    <footer>© 2025</footer>
+  </div>
+
+  <nav class="lang" aria-label="Language switcher">
+    <a href="index-ru.html" hreflang="ru" aria-label="Русская версия">RU</a>
+    <span class="sr">Current page: EN</span>
+  </nav>
+
+  <script>
+    const opts = document.querySelectorAll('.opt input');
+    opts.forEach(o => o.addEventListener('change', () => {
+      localStorage.setItem('first-date-en', o.value);
+    }));
+    const saved = localStorage.getItem('first-date-en');
+    if (saved) {
+      const el = document.querySelector(`.opt input[value="${saved}"]`);
+      if (el) el.checked = true;
+    }
+  </script>
+</body>
+</html>
