@@ -2,8 +2,8 @@
 // About uses your chosen #3 variant; emojis kept as provided.
 const TEXTS = {
   RU: {
-    title: "Люблю приключения на колёсах и кофе у костра ☕🏍️ — догоняй!",
-    tagline: "Мини-лендинг без лишнего — чтобы проще было познакомиться.",
+    title: " Михаил в Берлине 🇩🇪 — моя рубашка на тебе сидит лучше ❤️",
+    tagline: "Заинтригована? Пошли на ☕️ 🥂 🍷 — выбирай сама 👇",
     emojis: "🚴‍♂️ 🏕️ 🏍️ 🏐 🍷 🍿 ☕️ 💻 🧘‍♂️ 🛶 🌊 ✈️🌍",
     about:
       "Жизнь лучше офлайн — мото-пробеги, походы к скрытым озёрам, кофе у костра. Гитара? Только для фото. Костры и хорошая компания — вот где я сияю.",
@@ -21,8 +21,8 @@ const TEXTS = {
     ]
   },
   EN: {
-    title: "I love adventures on wheels and coffee by the campfire ☕🏍️ — try to catch up!",
-    tagline: "A tiny, no-nonsense landing so it’s easy to say hi.",
+    title: "Mikhail in Berlin 🇩🇪 — my shirt looks better on you ❤️",
+    tagline: "Curious? Let’s grab ☕️  🥂 🍷 — your pick 👇",
     emojis: "🚴‍♂️ 🏕️ 🏍️ 🏐 🍷 🍿 ☕️ 💻 🧘‍♂️ 🛶 🌊 ✈️🌍",
     about:
       "Life’s better offline — riding motorcycles, hiking to hidden lakes, sharing coffee by the fire. Guitar? Just for photos. Campfire and good company? That’s where I shine.",
