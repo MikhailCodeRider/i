@@ -48,7 +48,7 @@ h1{margin:0; font-weight:700; font-size:clamp(26px,4vw,40px)}
   border:1px solid #222a3a; border-radius:14px; overflow:hidden; background:#0c0f15;
 }
 .main-photo img{
-  width:100%; height:auto; display:block; aspect-ratio:16/10; object-fit:cover;
+  width:100%; height:auto; display:block; aspect-ratio:16/13; object-fit:cover;
 }
 .thumbs{display:flex; gap:10px; overflow:auto; padding-bottom:2px}
 .thumbs::-webkit-scrollbar{height:6px}
