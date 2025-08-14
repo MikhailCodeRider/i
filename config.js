@@ -8,7 +8,7 @@ const TEXTS = {
     about:
       "Жизнь лучше офлайн — мото-пробеги, походы к скрытым озёрам, кофе у костра. Гитара? Только для фото. Костры и хорошая компания — вот где я сияю.",
     onlyfansMsg: "Nice try! Ты серьёзно? Сначала кофе? ☕",
-    instagram: "https://instagram.com/mli_inst",
+    instagram: "https://instagram.com/themli_inst",
     telegram: "https://t.me/mli_tg",
     signal: "https://signal.me/#eu/GKLQ7rS7tY_boA6_8IqUE3rwFvWLiinOBdy0sti66aVDNjV8o7ZDhJ6XdgQAiqdw",
     photos: [
@@ -27,7 +27,7 @@ const TEXTS = {
     about:
       "Life’s better offline — riding motorcycles, hiking to hidden lakes, sharing coffee by the fire. Guitar? Just for photos. Campfire and good company? That’s where I shine.",
     onlyfansMsg: "Nice try! Are you serious? Coffee first? ☕",
-    instagram: "https://instagram.com/mli_inst",
+    instagram: "https://instagram.com/themli_inst",
     telegram: "https://t.me/mli_tg",
     signal: "https://signal.me/#eu/GKLQ7rS7tY_boA6_8IqUE3rwFvWLiinOBdy0sti66aVDNjV8o7ZDhJ6XdgQAiqdw",
     photos: [
