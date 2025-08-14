@@ -1,3 +1,5 @@
+// Texts + photo list by language.
+// Rename files in /photos if you want, and just update here.
 const TEXTS = {
   RU: {
     title: "Люблю приключения на колёсах и кофе у костра ☕🏍️ — догоняй!",
@@ -13,8 +15,8 @@ const TEXTS = {
       { src: "photos/norway-portrait.jpg", alt: "На фоне фьорда", class: "ph--std ph2" },
       { src: "photos/tesla-drive.jpg", alt: "За рулём Tesla", class: "ph--wide ph3" },
       { src: "photos/moto-gear.jpg", alt: "В мотоэкипировке", class: "ph--std ph4" },
-      { src: "photos/volleyball-dig.jpg", alt: "Игра в пляжный волейбол — приём", class: "ph--std ph5" },
-      { src: "photos/volleyball-spike.jpg", alt: "Игра в пляжный волейбол — атака", class: "ph--std ph6" }
+      { src: "photos/volleyball-dig.jpg", alt: "Пляжный волейбол — приём", class: "ph--std ph5" },
+      { src: "photos/volleyball-spike.jpg", alt: "Пляжный волейбол — атака", class: "ph--std ph6" }
     ]
   },
   EN: {
