@@ -12,27 +12,21 @@
   <div class="wrap">
     <header>
       <h1 id="title"></h1>
-      <div class="tagline" id="tagline"></div>
+      <p class="tagline" id="tagline"></p>
     </header>
 
-    <section class="gallery" aria-label="Photos">
-      <figure class="ph ph--std ph1"><img src="photos/campfire-guitar.jpg" alt="Campfire with a guitar" loading="lazy"/></figure>
-      <figure class="ph ph--std ph2"><img src="photos/norway-portrait.jpg" alt="Portrait with fjord background" loading="lazy"/></figure>
-      <figure class="ph ph--wide ph3"><img src="photos/tesla-drive.jpg" alt="Driving a Tesla" loading="lazy"/></figure>
-      <figure class="ph ph--std ph4"><img src="photos/moto-gear.jpg" alt="In motorcycle gear" loading="lazy"/></figure>
-      <figure class="ph ph--std ph5"><img src="photos/volleyball-dig.jpg" alt="Beach volleyball – dig" loading="lazy"/></figure>
-      <figure class="ph ph--std ph6"><img src="photos/volleyball-spike.jpg" alt="Beach volleyball – spike" loading="lazy"/></figure>
-    </section>
+    <!-- Collage -->
+    <section class="gallery" id="gallery" aria-label="Photos"></section>
 
     <section class="card">
-      <div class="about" id="about"></div>
+      <p class="about" id="about"></p>
       <div class="contacts">
-        <div class="cta" id="cta"></div>
+        <p class="cta" id="cta"></p>
         <div class="btns">
-          <a class="btn" id="igBtn" target="_blank" rel="noopener">Instagram</a>
-          <a class="btn" id="tgBtn" target="_blank" rel="noopener">Telegram</a>
-          <a class="btn" id="sgBtn" target="_blank" rel="noopener">Signal</a>
-          <a class="btn" href="#" id="onlyfansBtn">OnlyFans</a>
+          <a class="btn" id="igBtn" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+          <a class="btn" id="tgBtn" target="_blank" rel="noopener" aria-label="Telegram">Telegram</a>
+          <a class="btn" id="sgBtn" target="_blank" rel="noopener" aria-label="Signal">Signal</a>
+          <a class="btn" href="#" id="onlyfansBtn" aria-label="OnlyFans">OnlyFans</a>
         </div>
       </div>
     </section>
@@ -40,21 +34,26 @@
     <footer>© 2025</footer>
   </div>
 
+  <!-- Language switch -->
   <nav class="lang">
-    <a href="index-ru.html" hreflang="ru">RU</a>
+    <button id="ruBtn" type="button">RU</button>
+    <button id="enBtn" type="button">EN</button>
   </nav>
 
+  <!-- Lightbox (for photos & OF message) -->
+  <div id="overlay" class="overlay" hidden>
+    <div class="overlay__inner" role="dialog" aria-modal="true" aria-labelledby="overlayTitle">
+      <button class="overlay__close" id="overlayClose" aria-label="Close">×</button>
+      <div id="overlayContent"></div>
+      <div class="overlay__caption" id="overlayCaption"></div>
+      <div class="overlay__nav" id="overlayNav" hidden>
+        <button id="prevImg" aria-label="Previous">‹</button>
+        <button id="nextImg" aria-label="Next">›</button>
+      </div>
+    </div>
+  </div>
+
   <script src="config.js"></script>
-  <script>
-    const t = TEXTS.EN;
-    title.textContent = t.title;
-    tagline.textContent = t.tagline;
-    about.textContent = t.about;
-    cta.textContent = t.cta;
-    igBtn.href = t.instagram;
-    tgBtn.href = t.telegram;
-    sgBtn.href = t.signal;
-    onlyfansBtn.addEventListener('click', e => { e.preventDefault(); alert(t.onlyfansMsg); });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
