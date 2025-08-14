@@ -15,20 +15,48 @@
       <p class="tagline" id="tagline"></p>
     </header>
 
-    <!-- Collage -->
-    <section class="gallery" id="gallery" aria-label="Photos"></section>
+    <!-- Emojis line -->
+    <p class="emojis" id="emojis"></p>
 
     <section class="card">
       <p class="about" id="about"></p>
-      <div class="contacts">
-        <p class="cta" id="cta"></p>
-        <div class="btns">
-          <a class="btn" id="igBtn" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
-          <a class="btn" id="tgBtn" target="_blank" rel="noopener" aria-label="Telegram">Telegram</a>
-          <a class="btn" id="sgBtn" target="_blank" rel="noopener" aria-label="Signal">Signal</a>
-          <a class="btn" href="#" id="onlyfansBtn" aria-label="OnlyFans">OnlyFans</a>
-        </div>
+
+      <!-- Buttons directly under bio -->
+      <div class="btns">
+        <a class="btn" id="igBtn" target="_blank" rel="noopener" aria-label="Instagram">
+          <span class="ico" aria-hidden="true">
+            <!-- Instagram -->
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.4.4.6.2 1 .5 1.5 1 .5.5.8.9 1 1.5.2.5.3 1.2.4 2.4.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.4 2.4-.2.6-.5 1-1 1.5-.5.5-.9.8-1.5 1-.5.2-1.2.3-2.4.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.4-.4-.6-.2-1-.5-1.5-1-.5-.5-.8-.9-1-1.5-.2-.5-.3-1.2-.4-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.9.4-2.4.2-.6.5-1 1-1.5.5-.5.9-.8 1.5-1 .5-.2 1.2-.3 2.4-.4C8.4 2.2 8.8 2.2 12 2.2z"/><path fill="currentColor" d="M12 5.8A6.2 6.2 0 1 0 12 18.2 6.2 6.2 0 1 0 12 5.8m0 10.1A3.9 3.9 0 1 1 12 8.1a3.9 3.9 0 0 1 0 7.8z"/><circle cx="18.4" cy="5.6" r="1.4" fill="currentColor"/></svg>
+          </span>
+          Instagram
+        </a>
+
+        <a class="btn" id="tgBtn" target="_blank" rel="noopener" aria-label="Telegram">
+          <span class="ico" aria-hidden="true">
+            <!-- Telegram -->
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9.7 15.6 9.4 20c.5 0 .8-.2 1.1-.5l2.6-2.5 5.4 4c1 .6 1.6.3 1.8-1l3.3-15.3c.3-1.4-.5-2-1.4-1.6L1.8 9.4c-1.3.5-1.3 1.2-.2 1.6l5.6 1.8 13-8.2c.6-.4 1.1-.2.7.2L9.7 15.6z"/></svg>
+          </span>
+          Telegram
+        </a>
+
+        <a class="btn" id="sgBtn" target="_blank" rel="noopener" aria-label="Signal">
+          <span class="ico" aria-hidden="true">
+            <!-- Signal -->
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 1.5C6.2 1.5 1.5 6.2 1.5 12c0 1.8.5 3.6 1.4 5.1l-.9 3.6 3.6-.9A10.4 10.4 0 0 0 12 22.5c5.8 0 10.5-4.7 10.5-10.5S17.8 1.5 12 1.5zm0 18.9c-1.7 0-3.4-.5-4.8-1.4l-.3-.2-2.1.5.5-2.1-.2-.3A8.4 8.4 0 1 1 12 20.4z"/></svg>
+          </span>
+          Signal
+        </a>
+
+        <a class="btn btn-of" href="#" id="onlyfansBtn" aria-label="OnlyFans">OnlyFans</a>
       </div>
+    </section>
+
+    <!-- Gallery (one main photo + thumbs) -->
+    <section class="gallery" aria-label="Photos">
+      <div class="main-photo">
+        <img id="mainImg" src="" alt="" />
+      </div>
+      <div class="thumbs" id="thumbs" hidden></div>
     </section>
 
     <footer>© 2025</footer>
@@ -40,16 +68,11 @@
     <button id="enBtn" type="button">EN</button>
   </nav>
 
-  <!-- Lightbox (for photos & OF message) -->
-  <div id="overlay" class="overlay" hidden>
-    <div class="overlay__inner" role="dialog" aria-modal="true" aria-labelledby="overlayTitle">
-      <button class="overlay__close" id="overlayClose" aria-label="Close">×</button>
-      <div id="overlayContent"></div>
-      <div class="overlay__caption" id="overlayCaption"></div>
-      <div class="overlay__nav" id="overlayNav" hidden>
-        <button id="prevImg" aria-label="Previous">‹</button>
-        <button id="nextImg" aria-label="Next">›</button>
-      </div>
+  <!-- Minimal modal for OnlyFans message -->
+  <div id="modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__inner">
+      <div id="modalMsg" class="modal__msg"></div>
+      <button id="modalClose" class="modal__close">Close</button>
     </div>
   </div>
 
