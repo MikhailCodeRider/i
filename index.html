@@ -3,20 +3,29 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dating Mikhail</title>
+  <title>Dating • M.</title>
+  <meta name="description" content="Dating profile of M. - Adventure lover, motorcycle enthusiast, coffee by the campfire kind of person." />
   <meta name="color-scheme" content="light dark" />
-  <link rel="icon" href="favicon.png" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dating • M." />
+  <meta property="og:description" content="Adventure lover, motorcycle enthusiast, coffee by the campfire kind of person." />
+  <meta property="og:image" content="photos/campfire-guitar.jpg" />
+  <meta property="og:type" content="profile" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dating • M." />
+  <meta name="twitter:description" content="Adventure lover, motorcycle enthusiast, coffee by the campfire kind of person." />
+  <meta name="twitter:image" content="photos/campfire-guitar.jpg" />
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏍️</text></svg>" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="wrap">
-
-   <header>
-      <h3 id="title"></h3>
-      <p class="tagline" id="tagline"></p>
-    </header>
-
-    <div class="btns">
+  
+  <div class="btns">
       <a class="btn" id="igBtn" target="_blank" rel="noopener" aria-label="Instagram">
         <span class="ico" aria-hidden="true">
           <!-- Instagram -->
@@ -43,17 +52,25 @@
 
       <a class="btn btn-of" href="#" id="onlyfansBtn" aria-label="OnlyFans">OnlyFans</a>
     </div>
+    <header>
+      <h1 id="title"></h1>
+      <p class="tagline" id="tagline"></p>
+    </header>
 
+    <!-- Эмодзи -->
+    <p class="emojis" id="emojis"></p>
+
+    <!-- Био -->
     <section class="card">
       <p class="about" id="about"></p>
-      <p class="emojis" id="emojis"></p>
     </section>
 
+    <!-- Галерея: одно большое + превью -->
     <section class="gallery" aria-label="Photos">
-      <div class="main-photo">
+      <div class="main-photo" role="button" tabindex="0" aria-label="Click to zoom image">
         <img id="mainImg" src="" alt="" />
       </div>
-      <div class="thumbs" id="thumbs" hidden></div>
+      <div class="thumbs" id="thumbs" hidden role="tablist" aria-label="Photo thumbnails"></div>
     </section>
 
     <footer>© 2025</footer>
@@ -70,6 +87,15 @@
     <div class="modal__inner">
       <div id="modalMsg" class="modal__msg"></div>
       <button id="modalClose" class="modal__close">Close</button>
+    </div>
+  </div>
+
+  <!-- Image zoom modal -->
+  <div id="imageModal" class="image-modal" hidden role="dialog" aria-modal="true">
+    <div class="image-modal__backdrop"></div>
+    <div class="image-modal__content">
+      <img id="zoomedImg" src="" alt="" />
+      <button id="imageModalClose" class="image-modal__close" aria-label="Close image">×</button>
     </div>
   </div>
 
